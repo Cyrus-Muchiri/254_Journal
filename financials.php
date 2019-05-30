@@ -14,6 +14,9 @@ require_once	"page1.php";
     <title>
         XYN NEWS
     </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
@@ -196,7 +199,7 @@ require_once	"page1.php";
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="footer-widget">
                     <!-- Logo -->
-                    <a href="index.html" class="foo-logo"><img src="img/core-img/logo2.png" alt=""></a>
+                    <a href="index.html" class="foo-logo"><img src="images/logo.jpeg" height="70px" width="184px" alt=""></a>
                     <p>This is a news Site. Designed by Cyrus for Saraja</p>
                     <div class="footer-social-info">
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
