@@ -368,7 +368,7 @@ input:focus {
       @media only screen and (max-width: 767px) {
         .header-area .mag-main-menu .classy-navbar .nav-brand {
           margin-right: 15px;
-          max-width: 60px; } }
+          max-width: 184px; } }
     .header-area .mag-main-menu .top-search-area {
       position: relative;
       z-index: 1;
