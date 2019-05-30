@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Cyrus
+ * Date: 5/30/19
+ * Time: 12:01 PM
+ */
+
 require_once	"conn.php";
 require_once	"page1.php";
 ?>
@@ -54,8 +61,8 @@ require_once	"page1.php";
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="index.php">News</a></li>
-                                <li><a href="financials.php">Financials</a></li>
+                                <li ><a href="index.php">News</a></li>
+                                <li class="active"><a href="financials.php">Financials</a></li>
                                 <li><a href="sports.php">Sports</a></li>
                                 <li><a href="entertainment.php">Entertainment</a></li>
                                 <li><a href="technology.php">Technology</a></li>
@@ -73,7 +80,7 @@ require_once	"page1.php";
                                 <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -84,10 +91,9 @@ require_once	"page1.php";
 <div class="container">
     <div class="row">
         <div class="col-md-7 col-lg-8 border-right">
-            <h3 class="h5" align="center">Regular News</h3>
+            <h3 class="h5" align="center">Financial News</h3>
         </div>
-    </div>
-    <div class="row">
+    </div>   <div class="row">
 
         <div class="col-md-7 col-lg-8 border-right">
             <div class="card">
@@ -267,4 +273,3 @@ require_once	"page1.php";
 <script src="js/active.js"></script>
 
 </body>
-</html>

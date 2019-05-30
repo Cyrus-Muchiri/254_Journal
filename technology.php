@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 5/30/19
+ * Time: 12:02 PM
+ */
+
 require_once	"conn.php";
 require_once	"page1.php";
 ?>
@@ -58,7 +65,7 @@ require_once	"page1.php";
                                 <li><a href="financials.php">Financials</a></li>
                                 <li><a href="sports.php">Sports</a></li>
                                 <li><a href="entertainment.php">Entertainment</a></li>
-                                <li><a href="technology.php">Technology</a></li>
+                                <li class="active"><a href="technology.php">Technology</a></li>
 
                             </ul>
                         </div>
@@ -73,7 +80,7 @@ require_once	"page1.php";
                                 <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -82,11 +89,13 @@ require_once	"page1.php";
 <!-- ##### Header Area End ##### -->
 <!--News section-->
 <div class="container">
+
     <div class="row">
         <div class="col-md-7 col-lg-8 border-right">
-            <h3 class="h5" align="center">Regular News</h3>
+            <h3 class="h5" align="center">Technology News</h3>
         </div>
     </div>
+
     <div class="row">
 
         <div class="col-md-7 col-lg-8 border-right">
@@ -267,4 +276,3 @@ require_once	"page1.php";
 <script src="js/active.js"></script>
 
 </body>
-</html>

@@ -1,6 +1,13 @@
 <?php
-require_once	"conn.php";
-require_once	"page1.php";
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 5/30/19
+ * Time: 12:02 PM
+ */
+
+require_once "conn.php";
+require_once "page1.php";
 ?>
 <html>
 <head>
@@ -11,7 +18,8 @@ require_once	"page1.php";
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.css">
-  -->  <link rel="stylesheet" href="style.css">
+  -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -35,7 +43,8 @@ require_once	"page1.php";
             <nav class="classy-navbar justify-content-between" id="magNav">
 
                 <!-- Nav brand -->
-                <a href="index.html" class="nav-brand"><img src="images/logo.jpeg" alt="" height="70px" width="184px"></a>
+                <a href="index.html" class="nav-brand"><img src="images/logo.jpeg" alt="" height="70px"
+                                                            width="184px"></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -54,10 +63,10 @@ require_once	"page1.php";
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="index.php">News</a></li>
+                                <li><a href="index.php">News</a></li>
                                 <li><a href="financials.php">Financials</a></li>
                                 <li><a href="sports.php">Sports</a></li>
-                                <li><a href="entertainment.php">Entertainment</a></li>
+                                <li class="active"><a href="entertainment.php">Entertainment</a></li>
                                 <li><a href="technology.php">Technology</a></li>
 
                             </ul>
@@ -70,10 +79,11 @@ require_once	"page1.php";
                         <div class="top-search-area">
                             <form action="index.html" method="post">
                                 <input type="search" name="top-search" id="topSearch" placeholder="Search">
-                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
                             </form>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -84,24 +94,24 @@ require_once	"page1.php";
 <div class="container">
     <div class="row">
         <div class="col-md-7 col-lg-8 border-right">
-            <h3 class="h5" align="center">Regular News</h3>
+            <h3 class="h5" align="center">Entertainment News</h3>
         </div>
     </div>
     <div class="row">
 
         <div class="col-md-7 col-lg-8 border-right">
             <div class="card">
-                <?php $news_id = 1;?>
+                <?php $news_id = 1; ?>
                 <div class="card-body">
 
-                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id);?></h5>
+                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id); ?></h5>
 
 
-                    <p class="card-text"><?php  get_news_introduction($mysql_connection, $news_id);?></p>
+                    <p class="card-text"><?php get_news_introduction($mysql_connection, $news_id); ?></p>
 
 
                     <a class="card-link"
-                       href="<?php  get_news_link($mysql_connection, $news_id);?>">Business
+                       href="<?php get_news_link($mysql_connection, $news_id); ?>">Business
                         Daily</a>
                 </div>
             </div>
@@ -109,33 +119,33 @@ require_once	"page1.php";
             <hr/>
 
             <div class="card">
-                <?php $news_id = 2;?>
+                <?php $news_id = 2; ?>
                 <div class="card-body">
 
-                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id);?></h5>
+                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id); ?></h5>
 
 
-                    <p class="card-text"><?php  get_news_introduction($mysql_connection, $news_id);?></p>
+                    <p class="card-text"><?php get_news_introduction($mysql_connection, $news_id); ?></p>
 
 
                     <a class="card-link"
-                       href="<?php  get_news_link($mysql_connection, $news_id);?>">The Star</a>
+                       href="<?php get_news_link($mysql_connection, $news_id); ?>">The Star</a>
                 </div>
             </div>
             <br>
             <hr/>
             <div class="card">
-                <?php $news_id = 3;?>
+                <?php $news_id = 3; ?>
                 <div class="card-body">
 
-                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id);?></h5>
+                    <h5 class="card-title"><?php get_news_title($mysql_connection, $news_id); ?></h5>
 
 
-                    <p class="card-text"><?php  get_news_introduction($mysql_connection, $news_id);?></p>
+                    <p class="card-text"><?php get_news_introduction($mysql_connection, $news_id); ?></p>
 
 
                     <a class="card-link"
-                       href="<?php  get_news_link($mysql_connection, $news_id);?>">Business
+                       href="<?php get_news_link($mysql_connection, $news_id); ?>">Business
                         Daily</a>
                 </div>
             </div>
@@ -162,17 +172,17 @@ require_once	"page1.php";
                             <td>Change</td>
                         </tr>
                         </thead>
-                        <?php $share_id = 1;?>
+                        <?php $share_id = 1; ?>
                         <tr>
-                            <td><?php get_share_title($mysql_connection, $share_id);?></td>
-                            <td><?php  get_share_price($mysql_connection, $share_id);?></td>
-                            <td class="bg-success"><?php  get_share_percentage_change($mysql_connection, $share_id);?></td>
+                            <td><?php get_share_title($mysql_connection, $share_id); ?></td>
+                            <td><?php get_share_price($mysql_connection, $share_id); ?></td>
+                            <td class="bg-success"><?php get_share_percentage_change($mysql_connection, $share_id); ?></td>
                         </tr>
-                        <?php $share_id = 2;?>
+                        <?php $share_id = 2; ?>
                         <tr>
-                            <td><?php get_share_title($mysql_connection, $share_id);?></td>
-                            <td><?php  get_share_price($mysql_connection, $share_id);?></td>
-                            <td class="bg-success"><?php  get_share_percentage_change($mysql_connection, $share_id);?></td>
+                            <td><?php get_share_title($mysql_connection, $share_id); ?></td>
+                            <td><?php get_share_price($mysql_connection, $share_id); ?></td>
+                            <td class="bg-success"><?php get_share_percentage_change($mysql_connection, $share_id); ?></td>
                         </tr>
                     </table>
                 </div>
@@ -208,11 +218,16 @@ require_once	"page1.php";
                     <h6 class="widget-title">Categories</h6>
                     <nav class="footer-widget-nav">
                         <ul>
-                            <li><a href="index.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>News</a></li>
-                            <li><a href="financials.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Financials</a></li>
-                            <li><a href="sports.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</a></li>
-                            <li><a href="entertainment.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Entertainment</a></li>
-                            <li><a href="technology.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Technology</a></li>
+                            <li><a href="index.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>News</a>
+                            </li>
+                            <li><a href="financials.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Financials</a></li>
+                            <li><a href="sports.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</a>
+                            </li>
+                            <li><a href="entertainment.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Entertainment</a></li>
+                            <li><a href="technology.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    Technology</a></li>
 
                         </ul>
                     </nav>
@@ -240,8 +255,10 @@ require_once	"page1.php";
                     <h6 class="widget-title">Our contacts</h6>
                     <nav class="footer-widget-nav">
                         <ul>
-                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> 254 Journal</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> 0700000000</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> 254 Journal</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> 0700000000</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
